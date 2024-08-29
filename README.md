@@ -46,7 +46,31 @@ This tool analyzes code dependencies, building upper and lower layer call graphs
 | [neo.py](http://neo.py/)                                     | 图数据库接口和网页可视化接口                                 |
 | garph_interface.py                                           | 图形化接口                                                   |
 
-# 运行
+# 4. **可视化界面**
+
+主要操作界面使用tkinter库实现，组件图谱的展示界面使用pyvis库实现
+
+1. 主要操作界面如图1所示，
+
+2. 以resquests组件为例，搜索他两层以内上层组件的结果，如图2所示。
+
+3. 以resquests组件为例，搜索他三层以内下层组件的结果，如图3所示。
+
+   
+
+   ![image-20240829192247757](./README.assets/image-20240829192247757.png)
+
+图1
+
+![image-20240829192311617](./README.assets/image-20240829192311617.png)
+
+图2
+
+![image-20240829192322179](./README.assets/image-20240829192322179.png)
+
+图3
+
+# 5.运行
 
 1. 安装图数据库neo4j，安装完后在neo.py文件下配置neo4j，如：
 
